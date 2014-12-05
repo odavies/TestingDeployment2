@@ -14,4 +14,8 @@ public with sharing class CaseSelector {
 	public void setCaseName(String caseName) {
 		this.caseName = caseName;
 	}
+	
+	public void setCase(Case newCase) {
+		this.theCase = newCase;
+	}
 }
