@@ -10,4 +10,8 @@ public with sharing class CaseSelector {
 	public void loadCase(Id caseId) {
 		this.theCase = [SELECT Id FROM Case WHERE Id = :caseId][0];
 	}
+	
+	public void setCaseName(String caseName) {
+		this.caseName = caseName;
+	}
 }
